@@ -51,7 +51,7 @@ export default function Signup() {
               className="form-control"
               name="name"
               value={credentials.name}
-              onChange={onChange}
+              onChange={onChange} 
             />
           </div>
 
