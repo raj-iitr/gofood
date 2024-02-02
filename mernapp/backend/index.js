@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 //   next();
 // })
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://gofood-beta.vercel.app");
+  res.setHeader("Access-Control-Allow-Origin", "https://gofood-beta.vercel.ap");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
