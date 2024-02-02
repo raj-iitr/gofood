@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
 const password = "mASRZs7eE9wOMbWC";
-const url = `mongodb+srv://goFood:${password}@cluster0.u3szpsz.mongodb.net/gofoodmern`;
+// const url = `mongodb+srv://goFood:${password}@cluster0.u3szpsz.mongodb.net/gofoodmern`;
+const url = "mongodb+srv://foodapp:ThisIsAFoodApp@cluster0.u3szpsz.mongodb.net/gofoodmern";
 
 async function main() {
   try {
