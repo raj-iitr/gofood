@@ -20,14 +20,29 @@ app.get("/", (req, res) => {
 //   );
 //   next();
 // })
+// app.use((req, res, next) => {
+//   res.setHeader("Access-Control-Allow-Origin", "https://gofood-beta.vercel.app");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   next();
+// });
+
+app.options('*', (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "https://gofood-beta.vercel.app");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  res.status(200).send();
+});
+
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "https://gofood-beta.vercel.app");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   next();
 });
+
 
 app.use(express.json());
 app.use('/api', require('./routes/CreateUser'))
