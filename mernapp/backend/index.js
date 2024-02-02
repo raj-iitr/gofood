@@ -12,14 +12,23 @@ app.get("/", (req, res) => {
 });
 
 //middlewares
-app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","https://thisisafoodapp.onrender.com");
+// app.use((req,res,next)=>{
+//   res.setHeader("Access-Control-Allow-Origin","https://thisisafoodapp.onrender.com");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   next();
+// })
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "https://gofood-beta.vercel.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
   );
   next();
-})
+});
+
 app.use(express.json());
 app.use('/api', require('./routes/CreateUser'))
 app.use('/api', require('./routes/DisplayData'))
