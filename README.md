@@ -14,7 +14,7 @@
 <br>
 
 <h4 align="center">
-  Following tech stacks are used
+  Following tech stacks are used <br><br>
   <p align="center>
      <img src="mongodb.png" alt="mongodb" width="70" height="70">
      <img src="mongodb.png" alt="mongodb" width="70" height="70">
