@@ -16,7 +16,6 @@
 <h4 align="center">
   Following tech stacks are used
   <p align="center>
-     <img src="express.png" alt="express" width="70" height="70">
      <img src="mongodb.png" alt="mongodb" width="70" height="70">
      <img src="express.png" alt="express" width="70" height="70">
      <img src="react.png" alt="react" width="70" height="70">
