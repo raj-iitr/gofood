@@ -17,6 +17,7 @@
   Following tech stacks are used
   <p align="center>
      <img src="mongodb.png" alt="mongodb" width="70" height="70">
+     <img src="mongodb.png" alt="mongodb" width="70" height="70">
      <img src="express.png" alt="express" width="70" height="70">
      <img src="react.png" alt="react" width="70" height="70">
      <img src="node.png" alt="node" width="70" height="70">
